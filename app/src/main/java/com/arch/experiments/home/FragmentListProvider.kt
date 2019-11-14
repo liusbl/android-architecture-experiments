@@ -1,4 +1,4 @@
-package com.arch.experiments
+package com.arch.experiments.home
 
 import com.arch.experiments.tests.test_001.Test1Fragment
 

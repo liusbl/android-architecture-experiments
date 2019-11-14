@@ -1,8 +1,9 @@
-package com.arch.experiments
+package com.arch.experiments.home
 
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
+import com.arch.experiments.R
 import com.arch.experiments.common.BaseFragment
 import com.arch.experiments.common.lists.SingleViewTypeAdapter
 import kotlinx.android.synthetic.main.activity_main_item.view.*

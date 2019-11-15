@@ -1,5 +1,7 @@
 package com.arch.experiments.common.extensions
 
+import android.content.Context
+import android.widget.Toast
 import androidx.annotation.IdRes
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
@@ -13,4 +15,8 @@ fun FragmentActivity.replaceFragment(
         .replace(containerId, fragment)
         .addToBackStack(fragment.javaClass.simpleName)
         .commit()
+}
+
+fun Context.showToast(message: String?) {
+    Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
 }

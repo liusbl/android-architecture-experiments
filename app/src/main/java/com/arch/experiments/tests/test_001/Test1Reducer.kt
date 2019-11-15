@@ -1,8 +1,8 @@
 package com.arch.experiments.tests.test_001
 
 import com.arch.experiments.common.extensions.toObservable
-import com.arch.experiments.tests.test_001.misc.LoginUseCase
-import com.arch.experiments.tests.test_001.misc.MyPreferences
+import com.arch.experiments.tests.test_002.misc.LoginUseCase
+import com.arch.experiments.tests.test_002.misc.MyPreferences
 import io.reactivex.Observable
 import io.reactivex.schedulers.Schedulers
 import java.util.concurrent.TimeUnit

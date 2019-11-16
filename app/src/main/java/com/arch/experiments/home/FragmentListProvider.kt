@@ -15,9 +15,11 @@ import com.arch.experiments.tests.test_012.Test12Fragment
 import com.arch.experiments.tests.test_013.Test13Fragment
 import com.arch.experiments.tests.test_014.Test14Fragment
 import com.arch.experiments.tests.test_015.Test15Fragment
+import com.arch.experiments.tests.test_016.Test16Fragment
 
 class FragmentListProvider {
     fun getList() = listOf(
+        Test16Fragment(),
         Test15Fragment(),
         Test14Fragment(),
         Test13Fragment(),

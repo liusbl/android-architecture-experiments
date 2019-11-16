@@ -8,6 +8,12 @@
 
 - Answer the question: WHY?
 
+- What if settings self state is too long and something happens in that time?
+
+- What if state handler get's notified before updating components?
+
+- OTHER: What does saying "UseCase" provide
+
 - Consider how to handle cases where some edge case shouldn't happen
 if programmer was good (such as arguments!! or context!!)
 

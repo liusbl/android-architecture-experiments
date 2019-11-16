@@ -1,19 +1,20 @@
-package com.arch.experiments.tests.test_012
+package com.arch.experiments.tests.test_013
 
 import android.os.Bundle
 import android.view.View
+import androidx.core.view.isVisible
 import com.arch.experiments.R
 import com.arch.experiments.common.BaseFragment
 import com.arch.experiments.common.extensions.addTo
 import com.arch.experiments.common.extensions.showToast
-import com.arch.experiments.tests.test_012.Test12Presenter.*
+import com.arch.experiments.tests.test_013.Test13Presenter.*
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
 import kotlinx.android.synthetic.main.test_010.*
 
-class Test12Fragment : BaseFragment(R.layout.test_012) {
+class Test13Fragment : BaseFragment(R.layout.test_013) {
     private val disposables = CompositeDisposable()
-    lateinit var presenter: Test12Presenter
+    lateinit var presenter: Test13Presenter
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         handleUserAction()
@@ -43,7 +44,7 @@ class Test12Fragment : BaseFragment(R.layout.test_012) {
             .distinctUntilChanged(State::isLoading)
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe { state ->
-                //                    progressBar.visibility = if (state.isLoading) View.VISIBLE else View.GONE
+                progressBar.isVisible = state.isLoading
             }
             .addTo(disposables)
     }

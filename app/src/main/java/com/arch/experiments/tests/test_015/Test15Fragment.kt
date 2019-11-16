@@ -7,7 +7,7 @@ import com.arch.experiments.R
 import com.arch.experiments.common.BaseFragment
 import com.arch.experiments.common.extensions.showToast
 import com.arch.experiments.tests.test_015.Test15Presenter.*
-import kotlinx.android.synthetic.main.test_010.*
+import kotlinx.android.synthetic.main.test_015.*
 
 class Test15Fragment : BaseFragment(R.layout.test_015), StateChangeObserver<State, UiEffect> {
     lateinit var presenter: Test15Presenter

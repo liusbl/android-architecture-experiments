@@ -21,10 +21,12 @@ import com.arch.experiments.tests.test_018.Test18Fragment
 import com.arch.experiments.tests.test_019.Test19Fragment
 import com.arch.experiments.tests.test_020.Test20Fragment
 import com.arch.experiments.tests.test_021.Test21Fragment
+import com.arch.experiments.tests.test_022.Test22Fragment
 
 class FragmentListProvider {
     // TODO add color to indicate whether the test is finished
     fun getList() = listOf(
+        Test22Fragment(),
         Test21Fragment(),
         Test20Fragment(),
         Test19Fragment(),

@@ -1,12 +1,12 @@
-package com.arch.experiments.tests.test_040
+package com.arch.experiments.tests.test_041
 
 import android.os.Bundle
 import android.view.View
 import com.arch.experiments.R
 import com.arch.experiments.common.BaseFragment
 
-class Test40Fragment : BaseFragment(R.layout.test_040) {
+class Test41Fragment : BaseFragment(R.layout.test_041) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        // PTR: Test with Sigis
+        // PTR: Test with Vidma
     }
 }

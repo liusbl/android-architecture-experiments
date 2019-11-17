@@ -2,8 +2,8 @@ package com.arch.experiments.tests.test_035
 
 import com.arch.experiments.tests.test_035.Test35ViewModel.State
 import com.arch.experiments.tests.test_035.lib.*
-import com.arch.experiments.tests.test_035.misc.Database
-import com.arch.experiments.tests.test_035.misc.Greeter
+import com.arch.experiments.tests.test_036.misc.Database
+import com.arch.experiments.tests.test_036.misc.Greeter
 import io.reactivex.Observable
 
 class Test35ViewModel(

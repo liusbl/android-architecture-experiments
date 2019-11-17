@@ -7,8 +7,8 @@ import com.arch.experiments.R
 import com.arch.experiments.common.BaseFragment
 import com.arch.experiments.common.extensions.showToast
 import com.arch.experiments.tests.test_035.Test35ViewModel.State
-import com.arch.experiments.tests.test_035.misc.Database
-import com.arch.experiments.tests.test_035.misc.Greeter
+import com.arch.experiments.tests.test_036.misc.Database
+import com.arch.experiments.tests.test_036.misc.Greeter
 import kotlinx.android.synthetic.main.test_032.*
 
 class Test35Fragment : BaseFragment(R.layout.test_035) {

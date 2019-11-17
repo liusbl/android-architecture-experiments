@@ -1,6 +1,7 @@
 package com.arch.experiments.common.extensions
 
 import android.content.Context
+import android.view.View
 import android.widget.Toast
 import androidx.annotation.IdRes
 import androidx.fragment.app.Fragment
@@ -19,4 +20,12 @@ fun FragmentActivity.replaceFragment(
 
 fun Context.showToast(message: String?) {
     Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
+}
+
+fun View.onClick(action: () -> Unit) {
+    setOnClickListener { action() }
+}
+
+fun View.onClick(action: (Unit) -> Unit) {
+    setOnClickListener { action(Unit) }
 }

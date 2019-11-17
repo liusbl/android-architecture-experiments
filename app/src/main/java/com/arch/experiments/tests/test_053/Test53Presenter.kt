@@ -1,4 +1,4 @@
-package com.arch.experiments.tests.test_053.test
+package com.arch.experiments.tests.test_053
 
 import com.arch.experiments.tests.test_053.lib_core.Machine
 import com.arch.experiments.tests.test_053.lib_core.Observer

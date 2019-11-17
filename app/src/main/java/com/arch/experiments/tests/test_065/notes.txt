@@ -1,0 +1,41 @@
+DONE:
+
+
+TODO:
+
+    It looks to me that in order to accept this structure, people would need to change their views about presenters.
+    Really, each custom component should have it's own "presenter", which check their state logic
+    In this architecture, presenter is just a manager of state machines
+
+
+        // PTR: This is an interesting case
+        //  A visibility in android is defined in three states -> visible, gone, invisible
+        //  However, from presenter we usually just call "show" or "hide" ,
+        //      and then decide what to do in the view
+        //  It looks like you are forced to use enum with three states,
+        //  which might annoy some android developers, which are used to
+        //  deciding this part from the UI.
+        fun View.getVisibilityConfig() = object : StateConfig<ViewVisibility>() {
+            override fun observe(state: ViewVisibility) {
+                this@getVisibilityConfig.visibility = state.value
+            }
+        }
+        enum class ViewVisibility(val value: Int) {
+            VISIBLE(View.VISIBLE), GONE(View.GONE), INVISIBLE(View.INVISIBLE)
+        }
+
+        // PTR: This is just an event, no need to have config for such a thing.
+        //      Should provide a way to make Pusher instantly
+        fun Context.getToastConfig() = object : EventConfig<String>() {
+             override fun observe(state: String) {
+                 Toast.makeText(this@getToastConfig, state, Toast.LENGTH_SHORT).show()
+             }
+         }
+
+
+         fun <State> Config<State>.createMachine(initialState: State): Machine<State> {
+             val machineLinker = MachineLinker(initialState)
+             machineLinker.attachMachine(this)
+             // BAD why does the lib decide that this is "event"?
+             return machineLinker.attachMachine(EventConfig())
+         }

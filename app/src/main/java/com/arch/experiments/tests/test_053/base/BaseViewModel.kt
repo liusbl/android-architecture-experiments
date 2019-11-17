@@ -1,4 +1,4 @@
-package com.arch.experiments.tests.test_053.bass
+package com.arch.experiments.tests.test_053.base
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

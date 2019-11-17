@@ -6,4 +6,13 @@
 - parent/child (SPECIFY)
 - attaching more machines
 - lists
+- rotation (or another configuration change)
+- activity
+- fragment
+- custom view
+- async operations
+- async operation cancelling
+- internal presenter state
+- formatting
+- some third party library
 - ADD MORE...

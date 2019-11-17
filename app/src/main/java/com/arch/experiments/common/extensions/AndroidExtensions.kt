@@ -1,12 +1,17 @@
 package com.arch.experiments.common.extensions
 
 import android.content.Context
+import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import androidx.annotation.IdRes
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 
+fun <T : Fragment> T.withArgs(setUpBundle: Bundle.() -> Unit): T {
+    arguments = Bundle().apply(setUpBundle)
+    return this
+}
 
 fun FragmentActivity.replaceFragment(
     @IdRes containerId: Int,

@@ -1,0 +1,46 @@
+DONE:
+- Removed distinction from lib_core and lib_android for simplicity (later they should be separated)
+
+- Lifecycle class removed (add later)
+
+- Created tests for MultiLinkedMachine
+
+TODO:
+- Consider name "Interaction" instead of "Config"
+
+- detach machine in onViewDetachedFromWindow
+
+- should changing config call observe? I guess it depends on the config
+
+- consider if changing config should even be possible. Maybe it should be uninitialized previously?
+
+-Unsafe machines for android bidirectional interactions
+// TODO
+//fun <T> createUnsafeMachine(
+//    initialState: T,
+//    update: (T) -> Unit,
+//    onChanged: ((T) -> Unit) -> Unit
+//): Machine<T> =
+//    createPresenterStateMachine(initialState) {
+//        // TODO
+//        var latest: T = initialState
+//        observe {
+//            latest = state
+//            update(state)
+//        }
+//
+//        onChanged { data: T ->
+//            if (data != latest) {
+//                push(data)
+//            }
+//        }
+//    }
+
+// TODO figure out how to not need initial state and then use this
+//fun <State> createEventPusher(onObserve: (State) -> Unit): Pusher<State> {
+//    val global = GlobalMachine(false, initialState) // TODO You shouldn't need to pass initial state here.....
+//    val presenterMachine = global.createMachine()
+//    val viewMachine = global.createMachine()
+//    viewMachine.setUpViewMachine()
+//    return presenterMachine
+//}

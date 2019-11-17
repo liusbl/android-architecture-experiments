@@ -1,4 +1,4 @@
-package com.arch.experiments.tests.test_056.test
+package com.arch.experiments.tests.test_056
 
 import android.os.Bundle
 import android.view.View

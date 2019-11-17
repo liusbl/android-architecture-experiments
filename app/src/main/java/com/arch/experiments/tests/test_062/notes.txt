@@ -1,0 +1,9 @@
+DONE:
+- Initial config transformation tests
+
+TODO:
+- What about R.string resources for EditText?
+- AndroidConfig needs better name
+- Shoudl ListItemConfig and AndroidConfig be only StateConfig or generic?
+// TBD: Should onObserve and onPush be regular interface methods or fields (like now)
+- config.notifyObserverOnInit needs proper unit testing

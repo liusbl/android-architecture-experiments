@@ -2,7 +2,10 @@ package com.arch.experiments.common.extensions
 
 import android.content.Context
 import android.os.Bundle
+import android.text.Editable
+import android.text.TextWatcher
 import android.view.View
+import android.widget.EditText
 import android.widget.Toast
 import androidx.annotation.IdRes
 import androidx.fragment.app.Fragment
@@ -33,4 +36,20 @@ fun View.onClick(action: () -> Unit) {
 
 fun View.onClick(action: (Unit) -> Unit) {
     setOnClickListener { action(Unit) }
+}
+
+fun EditText.doAfterTextChanged(onTextChanged: (String) -> Unit) {
+    addTextChangedListener(object : TextWatcher {
+        override fun afterTextChanged(value: Editable?) {
+            value?.toString()?.let(onTextChanged::invoke)
+        }
+
+        override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
+            // Empty
+        }
+
+        override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+            // Empty
+        }
+    })
 }

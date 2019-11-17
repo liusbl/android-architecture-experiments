@@ -1,9 +1,9 @@
 package com.arch.experiments.tests.test_029
 
-import com.arch.experiments.tests.test_029.Test29ViewModel.State
-import com.arch.experiments.tests.test_029.lib.BaseViewModel
-import com.arch.experiments.tests.test_029.misc.Database
-import com.arch.experiments.tests.test_029.misc.Greeter
+import com.arch.experiments.tests.test_030.Test30ViewModel.State
+import com.arch.experiments.tests.test_030.lib.BaseViewModel
+import com.arch.experiments.tests.test_030.misc.Database
+import com.arch.experiments.tests.test_030.misc.Greeter
 
 class Test29ViewModel(
     private val db: Database,

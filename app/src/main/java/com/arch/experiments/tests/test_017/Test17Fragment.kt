@@ -9,11 +9,12 @@ import kotlinx.android.synthetic.main.test_017.*
 import kotlinx.android.synthetic.main.test_017_list_item.view.*
 
 class Test17Fragment : BaseFragment(R.layout.test_017) {
-    private val stateMachine = Test17StateMachine {
-        // TODO
-    }
+    private lateinit var stateMachine: Test17StateMachine
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        stateMachine = Test17StateMachine {
+            //TODO
+        }
         setUpEditTexts()
         setUpList()
     }

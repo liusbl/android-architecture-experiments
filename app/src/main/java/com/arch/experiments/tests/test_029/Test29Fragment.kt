@@ -5,10 +5,8 @@ import android.view.View
 import androidx.core.view.isVisible
 import com.arch.experiments.R
 import com.arch.experiments.common.BaseFragment
-import com.arch.experiments.tests.test_030.Test30ViewModel
-import com.arch.experiments.tests.test_030.Test30ViewModel.State
-import com.arch.experiments.tests.test_030.misc.Database
-import com.arch.experiments.tests.test_030.misc.Greeter
+import com.arch.experiments.tests.test_029.misc.Database
+import com.arch.experiments.tests.test_029.misc.Greeter
 import kotlinx.android.synthetic.main.test_028.*
 
 // No Actions, they are replaced with quick changed between state.
@@ -20,7 +18,7 @@ import kotlinx.android.synthetic.main.test_028.*
 
 class Test29Fragment : BaseFragment(R.layout.test_029) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        val viewModel = Test30ViewModel(Database(), Greeter())
+        val viewModel = Test29ViewModel(Database(), Greeter())
         // TODO Should toggle state instead, and also lifecycle events should be handled differently
         viewModel.push({ copy(isViewCreated = true) })
 
@@ -30,10 +28,10 @@ class Test29Fragment : BaseFragment(R.layout.test_029) {
         viewModel.pushAndReact(
             nameEditText::onTextChanged,
             { value -> copy(name = value) },
-            State::name,
+            Test29ViewModel.State::name,
             nameEditText::setSafeText
         ) // TBD: BLOAT?
-        viewModel.react(State::isLoading, { isLoading -> progressBar.isVisible = isLoading })
-        viewModel.react(State::greeting, greetingTextView::setText)
+        viewModel.react(Test29ViewModel.State::isLoading, { isLoading -> progressBar.isVisible = isLoading })
+        viewModel.react(Test29ViewModel.State::greeting, greetingTextView::setText)
     }
 }

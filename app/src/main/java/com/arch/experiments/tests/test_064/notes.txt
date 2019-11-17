@@ -1,0 +1,10 @@
+TBD: Maybe notifyObserverOnInit  should be an event????
+
+
+DONE:
+
+Proof of concept of nested observes in TransformationListTest
+
+TODO:
+
+Remove notifyObserverOnInit from MachineLinker, it should be one of config transformations

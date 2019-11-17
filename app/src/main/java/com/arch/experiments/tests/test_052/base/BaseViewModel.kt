@@ -1,9 +1,9 @@
-package com.arch.experiments.tests.test_051.bass
+package com.arch.experiments.tests.test_052.base
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.telesoftas.architecture.older_experiments.comparison.mvvm.lib.SingleLiveData
+import com.arch.experiments.common.viewmodels.SingleLiveData
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.disposables.Disposable
 

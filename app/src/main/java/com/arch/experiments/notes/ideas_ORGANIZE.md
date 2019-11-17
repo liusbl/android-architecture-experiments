@@ -6,6 +6,13 @@
 
 - Maybe store state in internal storage
 
+- Create possibility for using this library when you don't actually need that many states, 
+    as is usual with many android apps. But it should also provide a way to handle those states if need be.
+    
+- Create the perfect example which encompasses all these cases
+
+- Consider most common use cases.
+
 - Answer the question: WHY?
 
 - What if settings self state is too long and something happens in that time?

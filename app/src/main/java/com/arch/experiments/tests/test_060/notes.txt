@@ -1,0 +1,27 @@
+DONE:
+- Working implenetation of MachineLinker
+- Extracted simple example (ChangeListener) of how to change listener
+
+TODO:
+-notifyObserverOnInit not implemented
+- are "createPusher" and "createObserver" necessary?
+    I mean, they are upscaled to Machine!
+    I guest they are good for naming and clarity
+- TRY TO BRING BACK STATE TOGGLE! it maybe could be possible
+- Need to make proper tests and decide on the behaviour when initial state is being set
+- Need tests for more edge cases
+- Test events
+- Better name for     val notifyObserverOnInit: Boolean
+- TBD: Should "config" actually be names "interaction"
+- Still need proper consideration for events...
+    I think that it's NOT VALID to provide an initial state for events
+
+    // BAD now every lambda has these strange methods
+    // TODO make them scoped to only fragments or activities somehow
+
+        // BAD shouldn't need to pass initial state
+    //    fun <State> ((State) -> Unit).createEventPusher(initialState: State) =
+    //        EventConfig(onObserve = ::invoke).createPusher(initialState)
+    //
+    //    fun (() -> Unit).createEventPusher() =
+    //        EventConfig<Unit>(onObserve = { this.invoke() }).createPusher(Unit)

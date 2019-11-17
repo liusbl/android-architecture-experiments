@@ -18,7 +18,7 @@ import java.text.SimpleDateFormat
 import java.util.*
 import java.util.concurrent.Executors
 
-abstract class BaseFragment<Reducer : StateUpdateReducer<State>, State>(
+abstract class BaseReducerFragment<Reducer : StateUpdateReducer<State>, State>(
     layoutRes: Int
 ) : BaseFragment(layoutRes) {
     lateinit var reducer: Reducer // Inject

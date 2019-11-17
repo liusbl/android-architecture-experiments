@@ -5,7 +5,7 @@ import android.view.View
 import com.arch.experiments.R
 import kotlinx.android.synthetic.main.test_008.*
 
-class Test8Fragment : BaseFragment<Test8Reducer, Test8Fragment.State>(R.layout.test_008) {
+class Test8Fragment : BaseReducerFragment<Test8Reducer, Test8Fragment.State>(R.layout.test_008) {
     override val defaultState: State = State.DEFAULT
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

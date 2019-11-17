@@ -1,4 +1,9 @@
 - states
 - actions
 - effects
+- initialization of state from presenter
+- initialization of state from ui
+- parent/child (SPECIFY)
+- attaching more machines
+- lists
 - ADD MORE...

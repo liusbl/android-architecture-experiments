@@ -1,0 +1,12 @@
+DONE:
+ Successful initial implementation of scoping
+
+TODO:
+
+    AndroidMachines#createMachine is kinda coupled with the MVP structure,
+        it needs to be clearly separated
+    Maybe move scope handler to base fragment
+    ScopeHandler:
+        - Needs more methods to for clearing, because
+            what if you want to keep tracking states, but not update them in view?
+        - addLinkedMachines implementation is lousy

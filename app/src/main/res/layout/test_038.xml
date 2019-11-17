@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="HardcodedText">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="WITHOUT PASSING DATA"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@color/blue"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Actions To Nothing"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="#22FF00FF"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="1. View ACTIVATES a `btn_clicked` ACTION
+\n2. ViewModel OBSERVES the `btn_clicked` ACTION
+\n3. ViewModel INSTANTLY updates prefs value"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+            <Button
+                android:id="@+id/changePreferenceValueInstantlyButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="Change preference value instantly" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="#22FF00FF"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="1. View ACTIVATES a `btn_clicked` ACTION
+\n2. ViewModel OBSERVES the `btn_clicked`ACTION
+\n3. ViewModel ASYNC updates prefs value"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+            <Button
+                android:id="@+id/changePreferenceValueAsyncButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="Change preference value async" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:text="Actions To Effects"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="#22FF00FF"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="1. View ACTIVATES a `btn_clicked` ACTION
+\n2. ViewModel OBSERVES the `btn_clicked` ACTION
+\n3. ViewModel INSTANTLY ACTIVATES a `show_toast` EFFECT
+\n4. View OBSERVES the `show_toast` EFFECT
+\n5. View shows a Toast message"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+            <Button
+                android:id="@+id/emitEffectInstantlyButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="Emit effect instantly" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="#22FF00FF"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="1. View ACTIVATES a `btn_clicked` ACTION
+\n2. ViewModel OBSERVES the `btn_clicked`ACTION
+\n3. ViewModel ASYNC ACTIVATES a `show_toast` EFFECT
+\n4. View OBSERVES the `show_toast` EFFECT
+\n5. View shows a Toast message"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+            <Button
+                android:id="@+id/emitEffectAsyncButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="Emit effect async" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:text="Actions To States"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="#22FF00FF"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="1. View ACTIVATES an `btn_clicked` ACTION
+\n2. ViewModel OBSERVES the `btn_clicked`ACTION
+\n3. ViewModel INSTANTLY UPDATES `btn_color` STATE
+\n4. View OBSERVES the `btn_color` UPDATE
+\n5. View changes button color"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+            <Button
+                android:id="@+id/changeStateInstantlyButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="Change state instantly" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="#22FF00FF"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="1. View ACTIVATES an `btn_clicked` ACTION
+\n2. ViewModel OBSERVES the `btn_clicked`ACTION
+\n3. ViewModel ASYNC UPDATES `btn_color` STATE
+\n4. View OBSERVES the `btn_color` UPDATE
+\n5. View changes button color"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+            <Button
+                android:id="@+id/changeStateAsyncButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="Change state async" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:text="States To Nothing"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="#22FF00FF"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="1. View UPDATES `text` STATE
+\n2. ViewModel OBSERVES the `text` UPDATE
+\n3. ViewModel INSTANTLY updates prefs value"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+            <com.arch.experiments.common.widgets.AppEditText
+                android:id="@+id/changePreferenceValueInstantlyEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:hint="Change preference value instantly" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="#22FF00FF"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="1. View UPDATES `text` STATE
+\n2. ViewModel OBSERVES the `text` UPDATE
+\n3. ViewModel ASYNC updates prefs value"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+            <com.arch.experiments.common.widgets.AppEditText
+                android:id="@+id/changePreferenceValueAsyncEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:hint="Change preference value async" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:text="States To Effects"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="#22FF00FF"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="1. View UPDATES `text` STATE
+\n2. ViewModel OBSERVES the `text` UPDATE
+\n2. ViewModel INSTANTLY ACTIVATES a `show_toast` EFFECT
+\n3. View OBSERVES the `show_toast` EFFECT
+\n4. View shows Toast message"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+            <com.arch.experiments.common.widgets.AppEditText
+                android:id="@+id/emitEffectInstantlyEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:hint="Emit effect instantly" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="#22FF00FF"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="1. View UPDATES `text` STATE
+\n2. ViewModel OBSERVES the `text` UPDATE
+\n2. ViewModel ASYNC ACTIVATES a `show_toast` EFFECT
+\n3. View OBSERVES the `show_toast` EFFECT
+\n4. View shows Toast message"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+            <com.arch.experiments.common.widgets.AppEditText
+                android:id="@+id/emitEffectAsyncEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:hint="Emit effect async" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:text="States To States"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="#22FF00FF"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="1. View UPDATES `text1` STATE
+\n2. ViewModel OBSERVES the `text1` UPDATE
+\n2. ViewModel INSTANTLY UPDATES `text2` STATE
+\n3. View OBSERVES the `text2` UPDATE
+\n4. View sets other text to `text2`"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+            <com.arch.experiments.common.widgets.AppEditText
+                android:id="@+id/changeStateInstantlyEditText1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:hint="Change the other instantly" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="1. View UPDATES `text2` STATE
+\n2. ViewModel OBSERVES the `text2` UPDATE
+\n2. ViewModel INSTANTLY UPDATES `text1` STATE
+\n3. View OBSERVES the `text1` UPDATE
+\n4. View sets other text to `text1`"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+            <com.arch.experiments.common.widgets.AppEditText
+                android:id="@+id/changeStateInstantlyEditText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:hint="Change the other instantly" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="#22FF00FF"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="1. View UPDATES `text1` STATE
+\n2. ViewModel OBSERVES the `text1` UPDATE
+\n2. ViewModel ASYNC UPDATES `text2` STATE
+\n3. View OBSERVES the `text2` UPDATE
+\n4. View sets other text to `text2`"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+            <com.arch.experiments.common.widgets.AppEditText
+                android:id="@+id/changeStateAsyncEditText1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:hint="Change the other async" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="1. View UPDATES `text2` STATE
+\n2. ViewModel OBSERVES the `text2` UPDATE
+\n2. ViewModel ASYNC UPDATES `text1` STATE
+\n3. View OBSERVES the `text1` UPDATE
+\n4. View sets other text to `text1`"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+            <com.arch.experiments.common.widgets.AppEditText
+                android:id="@+id/changeStateAsyncEditText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:hint="Change the other async" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:text="Combinations"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:text="Example 1: Greeting"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="#22FF00FF"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.arch.experiments.common.widgets.AppEditText
+                    android:id="@+id/nameEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:hint="Enter text" />
+
+                <Button
+                    android:id="@+id/createGreetingButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="greet" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ProgressBar
+                    android:id="@+id/greetingProgressBar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/greetingTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="64dp"
+            android:gravity="center"
+            android:text="WITH PASSING DATA"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@color/blue"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>

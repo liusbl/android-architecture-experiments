@@ -9,6 +9,8 @@
 - rotation (or another configuration change)
 - activity
 - fragment
+- dialog
+- viewpager?
 - custom view
 - async operations
 - async operation cancelling

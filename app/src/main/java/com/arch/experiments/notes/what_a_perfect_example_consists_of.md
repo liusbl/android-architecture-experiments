@@ -14,7 +14,7 @@
 - custom views
 - async operations
 - async operation cancelling
-- internal presenter state
+- separate internal presenter state 
 - formatting
 - some third party library
 - form screen

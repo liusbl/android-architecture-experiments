@@ -3,7 +3,7 @@
 - effects
 - initialization of state from presenter
 - initialization of state from ui
-- parent/child (SPECIFY)
+- parent/child state sharing(SPECIFY)
 - attaching more machines
 - lists
 - rotation (or another configuration change)
@@ -11,10 +11,15 @@
 - fragment
 - dialog
 - viewpager?
-- custom view
+- custom views
 - async operations
 - async operation cancelling
 - internal presenter state
 - formatting
 - some third party library
+- form screen
+- drawer
+- bottom navigation
+- animations
+- toolbar controlling
 - ADD MORE...

@@ -11,6 +11,9 @@
 
 - I feel like formatting and storing state should be all part of the responsibility of the edit text.
 
+- What if machines were aware of their parents (such as MachineLinker or Config), 
+    they possibly this could do something good, is this valid? 
+
 - With this architecture, whether observe methods are called
       is decided outside the scope of presenter. Is this okay?
 

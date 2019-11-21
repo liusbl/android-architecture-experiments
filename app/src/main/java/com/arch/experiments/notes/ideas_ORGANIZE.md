@@ -9,6 +9,8 @@
 - Consider LiveData transformations
     https://proandroiddev.com/clean-easy-new-how-to-architect-your-app-part-4-livedata-transformations-f0fd9f313ec6
 
+- Need a way to provide ways to combine state machine, in order to support list ViewData? 
+
 - I feel like formatting and storing state should be all part of the responsibility of the edit text.
 
 - What if machines were aware of their parents (such as MachineLinker or Config), 

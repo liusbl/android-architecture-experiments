@@ -1,12 +1,12 @@
 package com.arch.experiments.tests.test_071
 
 import android.os.Bundle
-import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.arch.experiments.R
 import com.arch.experiments.common.BaseFragment
+import com.arch.experiments.common.extensions.inflate
 import com.arch.experiments.tests.test_071.lib.*
 import kotlinx.android.synthetic.main.test_071.*
 import kotlinx.android.synthetic.main.test_071_list_item.view.*
@@ -42,8 +42,7 @@ class Test71Fragment : BaseFragment(R.layout.test_071), AndroidMachines {
         override val scopeHandler = ScopeHandler()
 
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-            val inflater = LayoutInflater.from(parent.context)
-            val itemView = inflater.inflate(R.layout.test_071_list_item, parent, false)
+            val itemView = parent.inflate(R.layout.test_071_list_item)
             return ViewHolder(itemView)
         }
 

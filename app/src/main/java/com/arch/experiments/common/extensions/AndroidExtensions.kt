@@ -4,10 +4,13 @@ import android.content.Context
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
+import android.view.LayoutInflater
 import android.view.View
+import android.view.ViewGroup
 import android.widget.EditText
 import android.widget.Toast
 import androidx.annotation.IdRes
+import androidx.annotation.LayoutRes
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 
@@ -52,4 +55,9 @@ fun EditText.doAfterTextChanged(onTextChanged: (String) -> Unit) {
             // Empty
         }
     })
+}
+
+fun ViewGroup.inflate(@LayoutRes layoutRes: Int): View {
+    val inflater = LayoutInflater.from(context)
+    return inflater.inflate(layoutRes, this, false)
 }

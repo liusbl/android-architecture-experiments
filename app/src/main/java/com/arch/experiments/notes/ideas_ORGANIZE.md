@@ -9,6 +9,11 @@
 - Consider LiveData transformations
     https://proandroiddev.com/clean-easy-new-how-to-architect-your-app-part-4-livedata-transformations-f0fd9f313ec6
 
+- I feel like formatting and storing state should be all part of the responsibility of the edit text.
+
+- With this architecture, whether observe methods are called
+      is decided outside the scope of presenter. Is this okay?
+
 - Create possibility for using this library when you don't actually need that many states, 
     as is usual with many android apps. But it should also provide a way to handle those states if need be.
     

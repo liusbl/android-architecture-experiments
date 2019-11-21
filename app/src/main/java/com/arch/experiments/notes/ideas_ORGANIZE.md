@@ -14,6 +14,8 @@
 - With this architecture, whether observe methods are called
       is decided outside the scope of presenter. Is this okay?
 
+- Consider all the things you can do when you have access to all the state from a single location 
+
 - Create possibility for using this library when you don't actually need that many states, 
     as is usual with many android apps. But it should also provide a way to handle those states if need be.
     

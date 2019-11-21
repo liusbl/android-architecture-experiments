@@ -1,9 +1,4 @@
-package com.arch.experiments.tests.test_073.lib
-
-import com.arch.experiments.tests.test_074.lib.Config
-import com.arch.experiments.tests.test_074.lib.ConfigTransformation
-import com.arch.experiments.tests.test_074.lib.DefaultConfigTransformation
-import com.arch.experiments.tests.test_074.lib.EmptyConfig
+package com.arch.experiments.tests.test_074.lib
 
 class ConfigTransformationFactory<State> {
     fun create(list: List<ConfigTransformation<State>>): ConfigTransformation<State> {

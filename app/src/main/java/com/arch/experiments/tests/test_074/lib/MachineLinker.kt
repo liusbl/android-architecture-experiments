@@ -1,7 +1,4 @@
-package com.arch.experiments.tests.test_073.lib
-
-import com.arch.experiments.tests.test_074.lib.Config
-import com.arch.experiments.tests.test_074.lib.StateConfig
+package com.arch.experiments.tests.test_074.lib
 
 class MachineLinker<State>(initialState: State) {
     var currentState = initialState

@@ -1,6 +1,4 @@
-package com.arch.experiments.tests.test_073.lib
-
-import com.arch.experiments.tests.test_074.lib.ConfigTransformation
+package com.arch.experiments.tests.test_074.lib
 
 class AndroidTransformation<State> : ConfigTransformation<State> {
     private var observedValue: State? = null

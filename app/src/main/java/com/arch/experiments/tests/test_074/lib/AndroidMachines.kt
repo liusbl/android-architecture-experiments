@@ -1,4 +1,4 @@
-package com.arch.experiments.tests.test_073.lib
+package com.arch.experiments.tests.test_074.lib
 
 import android.content.Context
 import android.text.Editable
@@ -8,12 +8,9 @@ import android.widget.CompoundButton
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
-import com.arch.experiments.tests.test_074.lib.Config
-import com.arch.experiments.tests.test_074.lib.EventConfig
-import com.arch.experiments.tests.test_074.lib.StateConfig
 
 interface AndroidMachines {
-    val machineScope: MachineScope
+//    val machineScope: MachineScope
 
     fun View.createClickObserver(): Observer<Unit> {
         return getClickConfig().createObserver(Unit)
@@ -102,7 +99,7 @@ interface AndroidMachines {
         val viewMachine = machineLinker.attachMachine(this)
         val presenterMachine = machineLinker.attachMachine(EventConfig())
         // TBD: Maybe scopes should be separated from machines?
-        machineScope.addLinkedMachines(machineLinker, viewMachine, presenterMachine)
+//        machineScope.addLinkedMachines(machineLinker, viewMachine, presenterMachine)
         return presenterMachine
     }
 

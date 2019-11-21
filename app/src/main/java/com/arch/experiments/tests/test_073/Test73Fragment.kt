@@ -7,7 +7,11 @@ import androidx.recyclerview.widget.RecyclerView
 import com.arch.experiments.R
 import com.arch.experiments.common.BaseFragment
 import com.arch.experiments.common.extensions.inflate
-import com.arch.experiments.tests.test_073.lib.*
+import com.arch.experiments.tests.test_073.lib.AndroidMachines
+import com.arch.experiments.tests.test_073.lib.Machine
+import com.arch.experiments.tests.test_073.lib.MachineLinker
+import com.arch.experiments.tests.test_073.lib.MachineScope
+import com.arch.experiments.tests.test_074.lib.StateConfig
 import kotlinx.android.synthetic.main.test_073.*
 import kotlinx.android.synthetic.main.test_073_list_item.view.*
 

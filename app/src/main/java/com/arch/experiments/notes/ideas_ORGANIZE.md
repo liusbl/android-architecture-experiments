@@ -6,9 +6,16 @@
 
 - Maybe store state in internal storage
 
+- Consider LiveData transformations
+    https://proandroiddev.com/clean-easy-new-how-to-architect-your-app-part-4-livedata-transformations-f0fd9f313ec6
+
 - Create possibility for using this library when you don't actually need that many states, 
     as is usual with many android apps. But it should also provide a way to handle those states if need be.
     
+- Check code smell patterns
+
+- Consider what is the separation between ui and presenter state?
+
 - Create the perfect example which encompasses all these cases
 
 - Consider most common use cases.

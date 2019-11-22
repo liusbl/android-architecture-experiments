@@ -1,3 +1,5 @@
+- For lists, maybe should have a single state machine container for all items?
+
 There is clearly a need for some kind of state machine container
 from which you could access child's state machines.
 

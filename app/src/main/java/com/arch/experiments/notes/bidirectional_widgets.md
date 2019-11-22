@@ -1,4 +1,16 @@
-As an example, I will be using EditText
+## Explain
+
+- Don't notify "programmer" updates to widgets when state is changed from user side.
+    This could result in useless callbacks or infinite loops.
+    Example:
+        1. TextWatcher for EditText is attached
+        a. StateHandler state changes are observed by EditText
+        2. User inputs text
+        3. TextWatcher for EditText is notified by the framework
+        4. TextWatcher dispatches Action to StateHandler
+        5. Action updates the state in StateHandler
+        6. EditText observes change from StateHandler
+        7. EditText changes text, even though it's the same.
 
 - TODO: Check how text in EditText is set from keyboard, maybe there is some way to hack something.
 TextKeyListener
@@ -19,6 +31,7 @@ TextKeyListener
 - For Checkbox, you could use setOnClickListener instead of setOnCheckedChange
 
 - Some kind of value buffer solution:
+```kotlin
     private var valueBuffer = mutableListOf<Any?>()
 
     fun <T> LiveData<T>.observe(onObserve: (T) -> Unit) {
@@ -40,5 +53,4 @@ TextKeyListener
             (this as MutableLiveData<T>).postValue(value)
         }
     }
-
--
+```

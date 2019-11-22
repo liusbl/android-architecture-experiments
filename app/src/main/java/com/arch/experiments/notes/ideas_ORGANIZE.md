@@ -1,5 +1,4 @@
-- IDEA: generate some debug screen with all the information of
- all state machines where you can change all the states
+
 
 - Common name for (Publish and Subscribe) ValueProvider, Observer, Pusher and Machine:
     - StateInteractor?
@@ -12,6 +11,8 @@
 - Need a way to provide ways to combine state machine, in order to support list ViewData? 
 
 - I feel like formatting and storing state should be all part of the responsibility of the edit text.
+
+- Handle error onObserve
 
 - What if machines were aware of their parents (such as MachineLinker or Config), 
     they possibly this could do something good, is this valid? 

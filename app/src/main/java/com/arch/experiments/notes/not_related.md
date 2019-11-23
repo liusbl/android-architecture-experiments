@@ -2,5 +2,5 @@
 
 - What does saying "UseCase" provide, is that a good name? What does it signify?
 
-- Create sample app that uses everything
+- Create many samples which demonstrate everything possible
 

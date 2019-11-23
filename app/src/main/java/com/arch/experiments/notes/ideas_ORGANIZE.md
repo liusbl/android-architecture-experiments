@@ -16,11 +16,7 @@
 
 - Need a way to provide ways to combine state machine, in order to support list ViewData? 
 
-- Consider most common use cases.
-
-
 - What if state handler get's notified before updating components?
-
 
 - Consider how to handle cases where some edge case shouldn't happen
 if programmer was good (such as arguments!! or context!!)
@@ -67,74 +63,23 @@ if programmer was good (such as arguments!! or context!!)
     Not having to provide initial state for EventConfig would be one way to minimize confusion
     one way to do that would be to remove stateProvider from Pusher and Observer
 
-- Consider when you push identical states, how should it be reacted to
-
-- Consider how to pass state machines from one place to another
-
-- Consider concurrency issues
-    Analyze both conceptual and implementation concurrency issues.
-
-- Describe all the possible UI components and their interactions with state
-
 - Consider when the lifecycle doesn't match with the storage of the machine
     * For example when storing changes of list items. When they get unbinded they should retain their state.
 
-- Why is it bad to call view.getSomething from presenter?
-    * It wouldn't work in MVVM
-
-- Maybe make some structure when latest state is stored in background to prefs or something
-
-- Consider what if every component had it's own state machine
-
-- Provide a way to just set the initial state
-
-- Handle state changes from wider scopes.
-    Example:
-        Fragment's StateHandler could have access to Activity's or Application's StateHandlers.
-
-- Consider Menus
-
-- Consider onActivityResult
 
 - Consider usage outside of UI-Controller communcation
 
 - CHOOSE: Asynchronous state updates: should be part of stream VS just update BehaviourSubject themselves
 
-- Provide scope in which to create things that will have the same lifecycle
-
-- Check for leaks, proper object disposing
-
-- For lists there needs to be a way to create machine before the ui component is available
-
-- Possibility for improving things  like changing the language
-
-- Generate state machine from ui xml or something
-
-- Consider how not to bloat up state with large object
-
 - Consider for time travelling things:
     * Could only write down concrete state field changes instead of full state change
 
-- Consider providing solution without sealed classes for people fearing large switch cases
-
 - Consider making a "where to start" guide and lots of other tutorials, examples, samples
-
-- PTR: Graphs are things that make things clear, so use more of them
-
-- Analyze redux lib, react-native
-
-- Consider thread safety (Stage 1), but integration with other libs can come at Stage 2
 
 -Decide what to do with passing data in actions and effects.
     It seems to me that it would be best if no data was pass anywhere,
         it would only change through state.
     But then there would need to be very strict ordering.
-
-- Ensure that the latest state is always returned
-
-- Consider what if you only want to emit effect and not change state?
-
-- Consider usage in services, broadcast receivers
 
 - Consider that there are more lifecycle events then just start/stop.
     Possible events:
@@ -143,17 +88,10 @@ if programmer was good (such as arguments!! or context!!)
     3. View stops being notified
     4. State handling is stopped
 
-- Consider what if you don't want effects?
-
-- Consider simplicity / ease of understanding
 
 - Consider that StateMachineFactory could be used similarly for presenter?
 
 - Consider communication between fragments and activities
-
-- Create plan of what features to implement and priorities, aka roadmap
-
-- STREAMS: What if there is need for disposing the stream early?
 
 - Consider passing extras between activities and bundles in fragments
 
@@ -163,46 +101,20 @@ if programmer was good (such as arguments!! or context!!)
 
 - Consider integration with other state machines
 
-- Consider global handler of view models
-
-- Generate state machines from ui xml or something
-
-- Consider things that partially belong to view and partially to presenter, such as @ColorRes changes.
-    Maybe some transformation classes could be used?
-
-- Consider possibility of replacing Actions with quick State changes.
-
-- Consider usage outside of "presenter" type use cases
-
 - Consider situations when you need things to happen in some order.
     Example: You set a toast message and only after that you set toast show = true.
     If they were switched, you wouldn't get the latest message
 
-- PTR: There are some actions that just change state, others call some apis
-
-- Create custom state saver on configuration change
-
-
 - Create structure for automatically tracking UserActions.
     This could allow for a sort of "integration test", where you would replay those actions.
-
 
 - Consider that with switch cases methods might get bloated.
     Possible solution:
     Strictly enforcing method extraction when unless one-liner
 
-
-- Consider that it's almost impossible to have generic BaseViewModel
-
-
-- Shared scope in-memory storage instead of extras or arguments
-
 - Consider what to do about focusing views, should they be part of explicit state?
     My thinking is that they should, but only if something needs to be changed,
     then state should handle focuses of all views
-
-- Consider error handling
-
 
 - What if the view events are emitting too fast and system can't keep up,
     make some buffering mechanism. Example:
@@ -216,23 +128,12 @@ if programmer was good (such as arguments!! or context!!)
 
 -    // TODO need to somehow handle the creation of new state machines coming from UI
 
-- Analyze problem when you need to have enum state for view
-
-- Consider effects that only need to happen once
-
 - From a conceptual standpoint, there is no difference between cached state,
     persistent storage, network requests,
     to me they all like state updates
 
-- Maybe everything can be a state machine
-
-- Consider using some structure like CRUD?
-
-- Talk to marketing about writing an article
-
 - Explain why each state change should have it's own state machine
 
-- Convert news app to that architecture
 
 - Ensure that the state received is always the latest
 
@@ -240,9 +141,6 @@ if programmer was good (such as arguments!! or context!!)
 
 - Consider which places you should be able to attach middleware
 
-- Consider time travel
-
-- Append timestamp to each state change
 
 - Consider creating some separate super efficient state handling,
     which could allow some boilerplate, but would be used in

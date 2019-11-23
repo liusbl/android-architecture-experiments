@@ -24,6 +24,8 @@
 
 - long running tasks, like WorkManager, broadcasts, receivers
 
+- onActivityResult
+
 - rotation (or another configuration change)
 
 - different debug / release functionality

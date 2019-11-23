@@ -37,3 +37,20 @@
 - Write and post articles
 
 - Write documentation 
+
+- Describe all the possible UI components and their interactions with state
+
+- Why is it bad to call view.getSomething from presenter?
+    * It wouldn't work in MVVM
+
+- Show best solutions for each popular architecture and possible migration guides
+
+- Graphs are things that make things clear, so use more of them
+
+- Consider simplicity / ease of understanding
+
+- Talk to marketing about writing a good article and marketing
+
+- telesoftas' coding blog
+
+- Convert news app to that architecture

@@ -13,6 +13,23 @@
 
 - Possibility of navigation as state instead of event
 
+- Maybe make some structure when latest state is stored in background to prefs or something
+
+- Generate state machine from ui xml or something
+
+- Save timestamp with each state update
+
+- Consider things that partially belong to view and partially to presenter, such as @ColorRes changes.
+    Maybe some transformation classes could be used?
+    
+- Consider possibility of replacing Events with quick State changes.
+
+- Create custom state saver for configuration changes (done in some test)
+
+- Analyze problem when you need to have enum state for view (Such as view visibility)
+
+- Time travel
+
 - Integration with other popular libraries:
     - Android ViewModels
     - Dagger

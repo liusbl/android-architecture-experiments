@@ -11,6 +11,8 @@
 
 - Debugging options
 
+- Possibility of navigation as state instead of event
+
 - Integration with other popular libraries:
     - Android ViewModels
     - Dagger

@@ -42,10 +42,8 @@ if programmer was good (such as arguments!! or context!!)
     * Initialization when class is created
     * Initialization when lifecycle is started
 
-- During presentation do live coding / refactoring from mvp/mvvm
 
 
-- Consider state resetting
 
 - CHOOSE: single state field VS separate fields for each widget state.
     * IF using single state field, for state description CHOOSE: data class VS sealed class
@@ -62,27 +60,12 @@ if programmer was good (such as arguments!! or context!!)
     * Dispatch an Action
     * Observe a State change (this State should ONLY contain items that are necessary for that view)
 
-- Handle lifecycle in a generic way
 
-- Add possibility for middleware, logging
-    * Also, could log last states in case of crash
-
-- Should navigation be part of StateHandler or should it just be called in view?
-
-- Consider schedulers and threads
-
-- Consider unhandled errors
 
 - PTR: People have hard time distinguishing between Event and State
     Cia svarbi problema. Kaip programuotojui nesuklysti ir lengvai ir teisingai naudoti Event/State data, ar MutableLiveData/SingleLiveData
     Not having to provide initial state for EventConfig would be one way to minimize confusion
     one way to do that would be to remove stateProvider from Pusher and Observer
-
-- Consider scoping
-
-- Consider errors
-
-- Consider synchronization, concurrency, and all those things
 
 - Consider when you push identical states, how should it be reacted to
 

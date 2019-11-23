@@ -1,10 +1,14 @@
 #??
 
-- Lifecycle
+- Custom lifecycle
 
 - State sharing
 
 - State initialization
+
+- State resetting
+
+- State clearing
 
 - State creation 
 
@@ -21,5 +25,6 @@
 
 - Testing support
 
+- Try to explore the idea that events shouldn't and that ui should only handle states updates
 
 Not considered? Immutability, 

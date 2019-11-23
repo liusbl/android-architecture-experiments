@@ -32,3 +32,5 @@
     - Arrow https://arrow-kt.io/docs/
 
 - Look up state machine terminology
+
+- Try to explore the idea that events shouldn't and that ui should only handle states updates

@@ -29,3 +29,11 @@
 - Check LeakCanary for leaks
 
 - Strict mode
+
+- During presentation do live coding / refactoring from mvp/mvvm
+
+- Answer the question: WHY?
+
+- Write and post articles
+
+- Write documentation 

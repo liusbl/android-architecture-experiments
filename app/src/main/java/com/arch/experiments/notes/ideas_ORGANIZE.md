@@ -132,7 +132,6 @@ if programmer was good (such as arguments!! or context!!)
     persistent storage, network requests,
     to me they all like state updates
 
-- Explain why each state change should have it's own state machine
 
 
 - Ensure that the state received is always the latest

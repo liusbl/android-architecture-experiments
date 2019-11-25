@@ -54,3 +54,6 @@
 - telesoftas' coding blog
 
 - Convert news app to that architecture
+
+- Explain why each state change should have it's own state machine
+

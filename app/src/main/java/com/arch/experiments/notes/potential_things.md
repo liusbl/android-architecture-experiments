@@ -41,6 +41,10 @@
     - Firebase
     - Hyperion
 
+- Check cases like in festool how-to app and implement those
+
+- Leave only one of Config or Machine
+
 - State changes could be sent 
 
 - What if you treated things like database / storage as state machines? 
